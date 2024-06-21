@@ -1,7 +1,7 @@
 #!/bin/bash
 
-commit_a=3f83ccfc1e81695488c65b52d01b490669307068
-commit_b=c2fe0e5fd2e58277a0ffa434af1a079cf339d7eb
+commit_a=fa2634d4e58c9de4df186af3ea4d4eb587560517
+commit_b=375c11041acba5c8e8553222c3fe92f1e25c506e
 
 # Get the changes introduced by each commit
 changes_a=$(git show "$commit_a" --pretty=format: --unified=0)
