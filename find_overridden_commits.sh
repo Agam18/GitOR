@@ -1,11 +1,17 @@
 #!/bin/bash
 
-commit_a=fa2634d4e58c9de4df186af3ea4d4eb587560517
-commit_b=375c11041acba5c8e8553222c3fe92f1e25c506e
+commit_a=22954c3399bdea29a5291676d06246f8cfe8c150
+commit_b=01daeaf336daf81342b34563e20bd9819a71f881
 
 # Get the changes introduced by each commit
 changes_a=$(git show "$commit_a" --pretty=format: --unified=0)
 changes_b=$(git show "$commit_b" --pretty=format: --unified=0)
+
+echo "Changes in A:"
+echo "$changes_a"
+
+echo "Changes in B:"
+echo "$changes_b"
 
 # Flags to track the conditions
 overridden=false
